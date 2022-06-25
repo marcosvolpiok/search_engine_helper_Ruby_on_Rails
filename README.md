@@ -12,12 +12,12 @@ Run server
 
 Search
 ------------
-Go to:
+Use the following options to search in the different engines:
 
-    http://localhost:9000/google/hello
+    http://localhost:9000/search/google/hello
 
-    http://localhost:9000/bing/hello
+    http://localhost:9000/search/bing/hello
 
-    http://localhost:9000/googlebing/hello
+    http://localhost:9000/search/googlebing/hello
     
 
