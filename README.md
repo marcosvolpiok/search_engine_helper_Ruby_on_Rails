@@ -1,4 +1,4 @@
-Blog
+Search helper
 =========
 
 Requirements
@@ -13,10 +13,11 @@ Run server
 Search
 ------------
 Go to:
+
     http://localhost:9000/google/hello
 
     http://localhost:9000/bing/hello
-    
+
     http://localhost:9000/googlebing/hello
     
 
