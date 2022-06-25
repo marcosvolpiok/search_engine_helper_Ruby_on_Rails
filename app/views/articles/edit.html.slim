@@ -1,0 +1,8 @@
+= form_with(model: @article, local: true, url: '/admin/articles/'+@article.id) do |form|
+  = form.text_field :title, class: "form-control-static", placeholder: "Title", style: "width: 75%"
+  br 
+  = form.text_area :body, class: "form-control-static", placeholder: "Body", style: "width: 75%; height: 350px"
+  br 
+  .actions
+    = form.submit "Create", class: "btn btn-primary"
+    = link_to "Cancel", href="/admin", data: {dismiss: 'modal'}, class: "btn btn-default"

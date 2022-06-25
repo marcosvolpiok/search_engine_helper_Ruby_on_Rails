@@ -1,0 +1,1 @@
+Slim::Embedded.default_options[:markdown] = {autolink: true, space_after_headers: true, no_intra_emphasis: true, tables: true}

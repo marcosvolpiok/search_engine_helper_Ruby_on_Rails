@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link href="https://cdn.usebootstrap.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= # javascript_importmap_tags
+     %>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">My Blog</a>
+    </nav>  
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="/">
+                  <span data-feather="home"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog">
+                  <span data-feather="file"></span>
+                  Go to Blog
+                </a>
+              </li>            
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <%= yield %>
+        </main>
+      </div>    
+    </div>
+
+    <% # Bootstrap core JavaScript
+    #==================================================
+    # Placed at the end of the document so the pages load faster
+    %>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js"></script>
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <% #Icons %>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+</html>

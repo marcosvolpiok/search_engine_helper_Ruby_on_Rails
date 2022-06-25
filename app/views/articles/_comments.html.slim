@@ -1,0 +1,12 @@
+h2 Comments
+
+- if @comments.size >0
+  - @comments.each do |comment|
+    div
+      strong = comment.email
+    div
+      = comment.body
+    hr
+
+- else
+  p There are no comments yet!

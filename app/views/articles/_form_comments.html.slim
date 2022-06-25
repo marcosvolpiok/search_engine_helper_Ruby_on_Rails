@@ -1,0 +1,9 @@
+h2 Add your comment
+
+= form_with(model: @comment, local: true, url: '/blog/comment/'+@article.id) do |form|
+  = form.text_field :email, class: "form-control-static", placeholder: "Email", style: "width: 75%"
+  br 
+  = form.text_area :body, class: "form-control-static", placeholder: "Body", style: "width: 75%; height: 350px"
+  br 
+  .actions
+    = form.submit "Create", class: "btn btn-primary"
